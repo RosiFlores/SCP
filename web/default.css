@@ -1,0 +1,168 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/09/2014, 23:03:46
+    Author     : Mayara Amanda
+*/
+
+h1{
+    font-family: Bookman Old Style, Candara, Century;
+}
+
+h2{
+   font-family: Bookman Old Style, Candara, Century; 
+}
+
+h3{
+   font-family: Bookman Old Style, Candara, Century; 
+}
+
+#loginTela{
+   position:absolute;
+    top:50%;
+    left:50%;
+    width:500px;
+    height:300px;
+    margin-left:-250px;
+    margin-top:-150px;
+    text-align:center;
+    border-style: 2px;
+    border: 5px;
+    border-color: #333 solid; 
+    
+}
+
+
+
+
+.botao {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+	background:-moz-linear-radient( center top, #f9f9f9 5%, #e9e9e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+	background-color:#f9f9f9;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0px;
+	display:inline-block;
+	color:#666666;
+	font-family: Bookman Old Style, Candara, Century; 
+	font-size:15px;
+	font-style:normal;
+	height:84px;
+	line-height:84px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.botao:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+	background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+	background-color:#e9e9e9;
+}.botao:active {
+	position:relative;
+	top:1px;
+}
+
+
+.botao1 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+	background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+	background-color:#f9f9f9;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0px;
+	display:inline-block;
+	color:#666666;
+	font-family: Bookman Old Style, Candara, Century; 
+	font-size:10px;
+	font-style:normal;
+	height:84px;
+	line-height:84px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.botao1:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+	background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+	background-color:#e9e9e9;
+}.botao1:active {
+	position:relative;
+	top:1px;
+}
+.botao2 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7d767d), color-stop(1, #a8a8a8) );
+	background:-moz-linear-gradient( center top, #7d767d 5%, #a8a8a8 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d767d', endColorstr='#a8a8a8');
+	background-color:#7d767d;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+}
+.botao2:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a8a8a8), color-stop(1, #7d767d) );
+	background:-moz-linear-gradient( center top, #a8a8a8 5%, #7d767d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8a8a8', endColorstr='#7d767d');
+	background-color:#a8a8a8;
+}.botao2:active {
+	position:relative;
+	top:1px;
+}
