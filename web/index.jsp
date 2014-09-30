@@ -1,27 +1,64 @@
 <%-- 
-    Document   : index
-    Created on : 18/09/2014, 16:16:16
-    Author     : Angelo
+    Document   : index 
+    Created on : 28/09/2014, 20:37:49
+    Author     : Mayara Amanda
 --%>
 
-<%--<%@page language="Java" import="controller.PesquisarCursoController"%>--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="default.css" media="all" />
         <title>SCP - Sistema de Controle de Projetos</title>
     </head>
     <body>
-        <h1>Sistema de Controle de Projetos</h1><br><br>
+        <div id="page">
+            <center>
+                <button class="botao" onclick="location.href='PesquisarBolsistaController'">
+                        <span>Pesquisar Bolsista</span>
+                </button>
+                
+                <button class="botao" onclick="location.href='PesquisarCampusController'">
+                        <span>Pesquisar Campus</span>
+                </button>
+                
+                <button class="botao" onclick="location.href='PesquisarCursoController'">
+                        <span>Pesquisar Curso</span>
+                </button><br/><br/>
+                
+                <button class="botao" onclick="location.href='PesquisarEditalController'">
+                        <span>Pesquisar Edital</span>
+                </button>
+                
+                <button class="botao1" onclick="location.href='PesquisarFuncionarioController'">
+                        <span>Pesquisar Funcionario</span>
+                </button>   
+
+                <button class="botao1" onclick="location.href='PesquisarNucleoController'">
+                        <span>Pesquisar Núcleo</span>
+                </button><br/><br/>
+                
+                <button class="botao" onclick="location.href='PesquisarOrientadorController'">
+                        <span>Pesquisar Professor Orientador</span>
+                </button>
+
+                <button class="botao" onclick="location.href='PesquisarProjetoController'">
+                        <span>Pesquisar Projeto</span>
+                </button>
+
+                <button class="botao1" onclick="location.href='PesquisarSubAreaController'">
+                        <span>Pesquisar SubArea de Conhecimento</span>
+                </button><br/><br/>
+
+                <button class="botao" onclick="location.href='PesquisarTipoBolsaController'">
+                        <span>Pesquisar Tipo de Bolsa</span>
+                </button>
+
+            </center>
+
+        </div>
         
-        <a href="PesquisarCursoController"> Pesquisar Curso</a><br>
-        <a href="PesquisarProjetoController"> Pesquisar Projeto</a><br>
-        <a href="PesquisarSubAreaController"> Pesquisar SubArea de Conhecimento</a><br>
-        <a href="PesquisarTipoBolsaController"> Pesquisar Tipo de Bolsa</a><br>
-        <a href="PesquisarFuncionarioController"> Pesquisar Funcionário</a><br>
-        <a href="PesquisarNucleoController"> Pesquisar Núcleo</a><br>
-        <a href="PesquisarOrientadorController"> Pesquisar Orientador</a><br>
     </body>
 </html>
+
