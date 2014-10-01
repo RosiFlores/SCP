@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author Angelo
  */
-public class Edital  implements Parametro{ //extends SubArea
+public class Edital  extends Parametro{ //extends SubArea
     private int numero;
     private int ano;
     private String tipoBolsa;
@@ -121,48 +121,7 @@ public class Edital  implements Parametro{ //extends SubArea
         this.anexos = anexos;
     }
 
-    @Override
-    public String getNomeInstituicao() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setNomeInstituicao(String nomeInstituicao) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int getHorasEdital() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setHorasEdital(int horasEdital) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int getQuantidadeAlunos() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setQuantidadeAlunos(int quantidadeAlunos) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-   
-
-    @Override
-    public int getCodigo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setCodigo(int codigo) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-      public static List<Edital> obterEdital()
+     public static List<Edital> obterEdital()
        throws ClassNotFoundException, SQLException {
     return EditalDAO.obterEdital();
 }

@@ -54,6 +54,12 @@
                 <button class="botao" onclick="location.href='PesquisarTipoBolsaController'">
                         <span>Pesquisar Tipo de Bolsa</span>
                 </button>
+                <button class="botao1" onclick="location.href='PesquisarTipoCursoController'">
+                        <span>Pesquisar Tipos de Cursos</span>
+                </button>
+                <button class="botao" onclick="location.href='PesquisarInstituicaoController'">
+                        <span>Pesquisar Instituições</span>
+                </button>
 
             </center>
 
