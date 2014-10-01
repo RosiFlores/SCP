@@ -51,5 +51,29 @@ public class CursoDAO extends DAO {
         return curso;
 
     }
+    public static void gravar (Curso curso) throws SQLException, ClassNotFoundException{
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+ try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into curso(codCurso, nome, cargaHoraria, tipoCurso ,"
+                    +"totalPeriodos, professorCoordenador)"
+                    +"values (" + curso.getCodigo() + ", '"+ curso.getNome()
+                   // +"'," + curso.getCargaHoraria() + ",'" + curso.getTipoCurso()
+                   // +"'," + curso.getTotalPeriodos() + ","
+                    ;
+            if(curso.getProfessor()==null){
+                stringSQL = stringSQL + null;
+            }else{
+                stringSQL = stringSQL + curso.getProfessor().getMatriculaProfessorCoordenador();
+            }
+            stringSQL=stringSQL + ")";
+            comando.execute(stringSQL);
+        }finally{
+     fecharConexao(conexao, comando);
+ }
 
+    }
 }

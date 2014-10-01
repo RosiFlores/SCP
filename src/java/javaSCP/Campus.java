@@ -22,26 +22,46 @@ import java.util.List;
 public class Campus {
     
  private int codigo;
-    private String nomeCampus;
+    private String nome;
      private String instituicao;
     private String uf;
 
-    public Campus(int codigo,String nomeCampus, String instituicao, String uf) {
+    public Campus(int codigo,String nome, String instituicao, String uf) {
         this.codigo = codigo;
-        this.nomeCampus = nomeCampus;
+        this.nome = nome;
         this.instituicao = instituicao;
         this.uf = uf;
         
         
     }
-    
 
-    public String getNomeCampus() {
-        return nomeCampus;
+    public Campus(int codigo, String nome, String instituicao) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.instituicao = instituicao;
     }
 
-    public void setNomeCampus(String nomeCampus) {
-        this.nomeCampus = nomeCampus;
+    public Campus(int codigo, String nome) {
+        this.codigo = codigo;
+        this.nome = nome;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+    
+    
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getInstituicao() {

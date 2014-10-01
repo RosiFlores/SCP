@@ -40,17 +40,21 @@ public class CampusDAO extends DAO {
         }finally{
             fecharConexao(conexao, comando);
         }
+        
+          
         return campus;
         
     }
     
     public static Campus instanciarCampus(ResultSet rs)
             throws SQLException{
-        Campus umCampus = new Campus(rs.getInt("codigo"), rs.getString("nomeCampus"), rs.getString("instituicao"), rs.getString("uf"));
+        Campus umCampus = new Campus(rs.getInt("codigo"), rs.getString("nome"));
     
         return umCampus;
     } 
     
     
+        
+        
+    }
     
-}
