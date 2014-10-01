@@ -16,7 +16,15 @@
     </head>
     <body>
         <h2>Pesquisar Curso</h2>
+        <%-- 
+        <form>
+            <span>Insira o nome:</span> <input name="nome">
+            <button onClick="location.href = 'PesquisarCurso.java'">
+                <span>Pesquisar</span>
+            </button>
 
+        </form>
+        --%>
         <table border="1">
             <tr>
                 <th><span>Código</span>
@@ -39,7 +47,7 @@
 
         </table>
 
-        <br/><br/><button onClick="location.href = 'CadastrarCursoController?acao=prepararOperacao&Operacao=Incluir'">
+        <button onClick="location.href = 'CadastrarCursoController?acao=prepararOperacao&Operacao=Incluir'">
             <span>Incluir</span>
         </button> &nbsp;&nbsp;
 

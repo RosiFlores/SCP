@@ -20,7 +20,7 @@ public class Projeto{ // herdar de subareas
     private int codigo;
     private String titulo;
     private int cargaHoraria;
-    private int edital_codigo;
+    private int Edital_idEdital;
     private String palavraChave;
     private int duracao;
     private Date dataInicio;
@@ -33,7 +33,9 @@ public class Projeto{ // herdar de subareas
     private int quantidadeBolsista;
     private String instituicaoParceira;
     private String grupoPesquisaCNPq;
+    private String nucleoOrientador;
     private String professorParticipante;
+    private int cargaHorariaProfessor;
     
     
     public Projeto(int codigo, String titulo, int cargaHoraria, int Edital_idEdital, String palavrasChave, int duracao, Date dataInicio, Date dataTermino, float valorfinanciamento, Date dataFinanciamento, String tipoBolsa, String programa, String agenciaFomento, int quantidadeBolsista, String instituicaoParceira, String grupoPesquisaCNPq, String nucleoOrientador, String professorParticipante, int cargaHorariaProfessor) {
@@ -41,7 +43,7 @@ public class Projeto{ // herdar de subareas
         this.codigo = codigo;
         this.titulo = titulo;
         this.cargaHoraria = cargaHoraria;
-        this.edital_codigo = edital_codigo;
+        this.Edital_idEdital = Edital_idEdital;
         this.palavraChave = palavrasChave;
         this.duracao = duracao;
         this.dataInicio = dataInicio;
@@ -54,9 +56,21 @@ public class Projeto{ // herdar de subareas
         this.quantidadeBolsista = quantidadeBolsista;
         this.instituicaoParceira = instituicaoParceira;
         this.grupoPesquisaCNPq = grupoPesquisaCNPq;
+        this.nucleoOrientador = nucleoOrientador;
         this.professorParticipante = professorParticipante;
+        this.cargaHorariaProfessor = cargaHorariaProfessor;
     }
-  
+
+    public Projeto(int codigo, String titulo) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+    }
+    
+
+    
+   
+    
+
     public String getTitulo() {
         return titulo;
     }
@@ -137,6 +151,14 @@ public class Projeto{ // herdar de subareas
         this.quantidadeBolsista = quantidadeBolsista;
     }
 
+    public String getNucleoOrientador() {
+        return nucleoOrientador;
+    }
+
+    public void setNucleoOrientador(String nucleoOrientador) {
+        this.nucleoOrientador = nucleoOrientador;
+    }
+
     public String getProfessorParticipante() {
         return professorParticipante;
     }
@@ -145,11 +167,19 @@ public class Projeto{ // herdar de subareas
         this.professorParticipante = professorParticipante;
     }
 
-    public int getIdProjeto() {
+    public int getCargaHorariaProfessor() {
+        return cargaHorariaProfessor;
+    }
+
+    public void setCargaHorariaProfessor(int cargaHorariaProfessor) {
+        this.cargaHorariaProfessor = cargaHorariaProfessor;
+    }
+
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setIdProjeto(int codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
@@ -161,12 +191,12 @@ public class Projeto{ // herdar de subareas
         this.cargaHoraria = CargaHoraria;
     }
 
-    public int getEdital_codigo() {
-        return edital_codigo;
+    public int getEdital_idEdital() {
+        return Edital_idEdital;
     }
 
-    public void setEdital_codigo(int edital_codigo) {
-        this.edital_codigo = edital_codigo;
+    public void setEdital_idEdital(int Edital_idEdital) {
+        this.Edital_idEdital = Edital_idEdital;
     }
 
     public float getValorfinanciamento() {

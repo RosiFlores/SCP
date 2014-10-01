@@ -42,7 +42,7 @@ public class OrientadorDAO extends DAO {
 
     public static  Orientador instanciarOrientador(ResultSet rs)
             throws SQLException{
-        Orientador orientador = new Orientador(rs.getInt("matricula"),rs.getString("pessoas_codigo"), rs.getString("homePageLattes"));
+        Orientador orientador = new Orientador(rs.getInt("matricula"), rs.getString("homepageLattes"));
         
         return orientador;
         

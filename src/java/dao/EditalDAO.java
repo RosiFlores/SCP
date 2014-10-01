@@ -31,10 +31,11 @@ public class EditalDAO extends DAO {
             conexao = BD.getConexao();
             comando = conexao.createStatement();
             ResultSet rs = comando.executeQuery("select * from edital");
+           
             while (rs.next()) {
                 edital = instanciarEdital(rs);
                 editais.add(edital);
-                return editais;
+                
             }
 
         } finally {
@@ -48,7 +49,7 @@ public class EditalDAO extends DAO {
 
     public static Edital instanciarEdital(ResultSet rs)
             throws SQLException{
-        Edital edital = new Edital(rs.getInt("numeroEdital"),rs.getInt("anoEdital"));
+        Edital edital = new Edital(rs.getInt("numero"),rs.getInt("ano"));
         
         return edital;
         

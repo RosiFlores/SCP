@@ -17,24 +17,14 @@ import java.util.List;
  */
 public class Funcionario implements Pessoa {
     private int matricula;
-    private String nomeFuncionario;
+    
 
-    public Funcionario(int matricula, String nomeFuncionario) {
+    public Funcionario(int matricula) {
         this.matricula = matricula;
-        this.nomeFuncionario = nomeFuncionario;
+        
     }
 
-    public String getNomeFuncionario() {
-        return nomeFuncionario;
-    }
-
-    public void setNomeFuncionario(String nomeFuncionario) {
-        this.nomeFuncionario = nomeFuncionario;
-    }
-    
-    
-
-    public int getMatricula() {
+     public int getMatricula() {
         return matricula;
     }
 

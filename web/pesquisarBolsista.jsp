@@ -8,13 +8,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type<form>
-            
-        </form>" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Pesquisar Bolsista</title>
     </head>
     <body>
@@ -33,23 +30,14 @@
            
                   <c:forEach items="${bolsistas}" var="bolsista">
                       <tr>
-                            <td><c.out value="${bolsista.matricula}" /></td>
-                            <td><c.out value="${bolsista.nomeBanco}" /></td>
-                            <td><c.out value="${bolsista.agencia}" /></td>
-                            <td><c.out value="${bolsista.contaBancaria}" /></td>
-
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Editar&codBolsista=<c:out value='${bolsista.matricula}'/>"> Editar</a></td><br/>
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Excluir&codBolsista=<c:out value='${bolsista.matricula}'/>"> Excluir</a></td><br/>
-
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Editar&codBolsista=<c:out value='${bolsista.nomeBanco}'/>"> Editar</a></td>
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Excluir&codBolsista=<c:out value='${bolsista.nomeBanco}'/>"> Excluir</a></td>
-
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Editar&codBolsista=<c:out value='${bolsista.contaBancaria}'/>"> Editar</a></td>
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Excluir&codBolsista=<c:out value='${bolsista.contaBancaria}'/>"> Excluir</a></td>
-
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Editar&codBolsista=<c:out value='${bolsista.agencia}'/>"> Editar</a></td>
-                            <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Excluir&codBolsista=<c:out value='${bolsista.agencia}'/>"> Excluir</a></td>
-                       </tr>
+                    <td><c:out value="${bolsista.matricula}" /></td>
+                     <td><c:out value="${bolsista.nomeBanco}" /></td>
+                     <td><c:out value="${bolsista.agencia}" /></td>
+                     <td><c:out value="${bolsista.contaCorrente}" /></td>
+                     <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Editar&codBolsista=<c:out value='${bolsista.matricula}'/>"> Editar</a></td>
+                     <td><a href="CadastrarBolsistaController?acao=prepararOperacao&operacao=Excluir&codBolsista=<c:out value='${bolsista.matricula}'/>"> Excluir</a></td>
+                      
+        </tr>
         
    </c:forEach>
         

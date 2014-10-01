@@ -11,32 +11,27 @@ import java.util.List;
  */
 public class Orientador implements Pessoa{
 
-    private String nome;
+    
     private int matricula;
-    private String homePageLattes;
-    
+    private String homepageLattes;
+    private String setor;
 
-    public Orientador( int matricula,String nome, String homePageLattes) {
+    public Orientador( int matricula, String homepageLattes) {
         
         this.matricula = matricula;
-        this.nome = nome;
-        this.homePageLattes = homePageLattes;
+        
+        this.homepageLattes = homepageLattes;
         
     }
 
-    public Orientador(int matricula,String nome) {
-        this.nome = nome;
+    public Orientador(int matricula) {
+        
         this.matricula = matricula;
     }
+
     
-    public String getNome() {
-        return nome;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+    
     public int getMatricula() {
         return matricula;
     }
@@ -45,12 +40,32 @@ public class Orientador implements Pessoa{
         this.matricula = matricula;
     }
 
-    public String getHomePageLattes() {
-        return homePageLattes;
+    public String getHomepageLattes() {
+        return homepageLattes;
     }
 
-    public void setHomePageLattes(String homePageLattes) {
-        this.homePageLattes = homePageLattes;
+    public void setHomepageLattes(String homepageLattes) {
+        this.homepageLattes = homepageLattes;
+    }
+
+    public String getSetor() {
+        return setor;
+    }
+
+    public void setSetor(String setor) {
+        this.setor = setor;
+    }
+    
+    
+
+    @Override
+    public String getNome() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setNome(String nome) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

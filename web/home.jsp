@@ -54,8 +54,9 @@
                 <div id="menu">
                         <ul>
                             <li><a href="sobre.jsp" target="iframe">Início</a></li>
-                                <li><a href="index3.jsp" target="iframe">Cadastro</a></li>
-                                <li><a href="index2.jsp" target="iframe">Pesquisa</a></li>
+                                <li><a href="editais.jsp" target="iframe">Editais</a></li>
+                                <li><a href="projetos.jsp" target="iframe">Projetos</a></li>
+                                <li><a href="index.jsp" >Sair</a></li>
                                 
                         </ul>
                 </div>

@@ -20,23 +20,24 @@
 			
         <table border="1">
                 <tr>
-                    <th><span>ID</span>
+                    <th><span>Matricula</span>
                     </th>
-                    <th><span>NOME DO ORIENTADOR</span></th>
+                    <th><span>Home Page Curriculo Lattes</span></th>
                     <th colspan="2"><span>OPÇÕES</span>
                         <span></span></th>
                 </tr>
 
-                <tr>
+                
                     <c:forEach items="${orientadores}" var="orientador">
+                        <tr>
                         <td><c:out value="${orientador.matricula}" /></td>
-                         <td><c:out value="${orientador.nome}" /></td>
+                         <td><c:out value="${orientador.homepageLattes}" /></td>
                           <td><a href="CadastrarOrientadorController?acao=prepararOperacao&operacao=Editar&matricula=<c:out value='${orientador.matricula}'/>"> Editar</a></td>
                           <td><a href="CadastrarOrientadorController?acao=prepararOperacao&operacao=Excluir&matricula=<c:out value='${orientador.matricula}'/>"> Excluir</a></td>
 
-
+  </tr>
                     </c:forEach>
-                </tr>
+              
           </table>
         
         <button onClick="location.href = 'index.jsp'">

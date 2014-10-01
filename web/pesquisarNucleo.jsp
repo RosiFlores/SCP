@@ -18,7 +18,7 @@
 
         <table border="1">
             <tr>
-                <th><span>ID</span>
+                <th><span>Código</span>
                 </th>
                 <th><span>Nome do núcleo</span></th>
                 <th colspan="2"><span>OPÇÕES</span>
@@ -30,8 +30,8 @@
                 <tr>
                     <td><c:out value="${nucleo.codigo}" /></td>
                     <td><c:out value="${nucleo.nome}" /></td>
-                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Editar&matricula=<c:out value='${nucleo.codigo}'/>"> Editar</a></td>
-                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Excluir&matricula=<c:out value='${nucleo.codigo}'/>"> Excluir</a></td>
+                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Editar&codigo=<c:out value='${nucleo.codigo}'/>"> Editar</a></td>
+                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Excluir&codigo=<c:out value='${nucleo.codigo}'/>"> Excluir</a></td>
 
                 </tr>
             </c:forEach>

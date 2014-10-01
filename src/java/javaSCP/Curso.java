@@ -19,10 +19,16 @@ public class Curso {
     private int codigo;
     private String professor;
     private String matriculaProfessorCoordenador;
+   
 
     public Curso(String nome, int codigo, String professor, String matriculaProfessorCoordenador) {
         this.nome = nome;
         this.codigo = codigo;
+        this.professor = professor;
+        this.matriculaProfessorCoordenador = matriculaProfessorCoordenador;
+    }
+
+    public Curso(String professor, String matriculaProfessorCoordenador) {
         this.professor = professor;
         this.matriculaProfessorCoordenador = matriculaProfessorCoordenador;
     }
@@ -66,8 +72,8 @@ public class Curso {
     public void setMatriculaProfessorCoordenador(String matriculaProfessorCoordenador) {
         this.matriculaProfessorCoordenador = matriculaProfessorCoordenador;
     }
-
-
+    
+    
     public static List<Curso> obterCursos()
             throws ClassNotFoundException, SQLException {
         return CursoDAO.obterCursos();

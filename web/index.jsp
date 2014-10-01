@@ -40,7 +40,7 @@
                 </button><br/><br/>
                 
                 <button class="botao" onclick="location.href='PesquisarOrientadorController'">
-                        <span>Pesquisar Orientador</span>
+                        <span>Pesquisar Professor Orientador</span>
                 </button>
 
                 <button class="botao" onclick="location.href='PesquisarProjetoController'">

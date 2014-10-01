@@ -23,18 +23,37 @@ public class Campus {
     
  private int codigo;
     private String nome;
+     private String instituicao;
+    private String uf;
 
-    public Campus(int codigo,String nome) {
+    public Campus(int codigo,String nome, String instituicao, String uf) {
         this.codigo = codigo;
         this.nome = nome;
-      
+        this.instituicao = instituicao;
+        this.uf = uf;
         
         
     }
 
-    public Campus(int aInt, String string, String string0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Campus(int codigo, String nome, String instituicao) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.instituicao = instituicao;
     }
+
+    public Campus(int codigo, String nome) {
+        this.codigo = codigo;
+        this.nome = nome;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+    
     
 
     public String getNome() {
@@ -45,8 +64,22 @@ public class Campus {
         this.nome = nome;
     }
 
- 
-    public static List<Campus> obterCampus()
+    public String getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(String instituicao) {
+        this.instituicao = instituicao;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+public static List<Campus> obterCampus()
        throws ClassNotFoundException, SQLException {
     return CampusDAO.obterCampus();
 }
