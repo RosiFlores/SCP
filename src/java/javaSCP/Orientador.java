@@ -11,33 +11,30 @@ import java.util.List;
  */
 public class Orientador implements Pessoa{
 
-    private String nomeOrientador;
+    private String nome;
     private int matricula;
-    private String homePageCL;
-    private String setor;
-
-    public Orientador( int matricula,String nomeOrientador, String homePageCL) {
-        
-        this.matricula = matricula;
-        this.nomeOrientador = nomeOrientador;
-        this.homePageCL = homePageCL;
-        
-    }
-
-    public Orientador(int matricula,String nomeOrientador) {
-        this.nomeOrientador = nomeOrientador;
-        this.matricula = matricula;
-    }
-
+    private String homePageLattes;
     
 
-    
-    public String getNomeOrientador() {
-        return nomeOrientador;
+    public Orientador( int matricula,String nome, String homePageLattes) {
+        
+        this.matricula = matricula;
+        this.nome = nome;
+        this.homePageLattes = homePageLattes;
+        
     }
 
-    public void setNomeOrientador(String nomeOrientador) {
-        this.nomeOrientador = nomeOrientador;
+    public Orientador(int matricula,String nome) {
+        this.nome = nome;
+        this.matricula = matricula;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getMatricula() {
@@ -48,32 +45,12 @@ public class Orientador implements Pessoa{
         this.matricula = matricula;
     }
 
-    public String getHomePageCL() {
-        return homePageCL;
+    public String getHomePageLattes() {
+        return homePageLattes;
     }
 
-    public void setHomePageCL(String homePageCL) {
-        this.homePageCL = homePageCL;
-    }
-
-    public String getSetor() {
-        return setor;
-    }
-
-    public void setSetor(String setor) {
-        this.setor = setor;
-    }
-    
-    
-
-    @Override
-    public String getNome() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setNome(String nome) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setHomePageLattes(String homePageLattes) {
+        this.homePageLattes = homePageLattes;
     }
 
     @Override

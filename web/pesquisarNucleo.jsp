@@ -28,10 +28,10 @@
 
             <c:forEach items="${nucleos}" var="nucleo">
                 <tr>
-                    <td><c:out value="${nucleo.codigoNucleo}" /></td>
-                    <td><c:out value="${nucleo.nomeNucleo}" /></td>
-                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Editar&matricula=<c:out value='${nucleo.codigoNucleo}'/>"> Editar</a></td>
-                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Excluir&matricula=<c:out value='${nucleo.codigoNucleo}'/>"> Excluir</a></td>
+                    <td><c:out value="${nucleo.codigo}" /></td>
+                    <td><c:out value="${nucleo.nome}" /></td>
+                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Editar&matricula=<c:out value='${nucleo.codigo}'/>"> Editar</a></td>
+                    <td><a href="CadastrarNucleoController?acao=prepararOperacao&operacao=Excluir&matricula=<c:out value='${nucleo.codigo}'/>"> Excluir</a></td>
 
                 </tr>
             </c:forEach>

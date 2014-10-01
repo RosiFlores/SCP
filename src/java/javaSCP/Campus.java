@@ -22,44 +22,31 @@ import java.util.List;
 public class Campus {
     
  private int codigo;
-    private String nomeCampus;
-     private String instituicao;
-    private String uf;
+    private String nome;
 
-    public Campus(int codigo,String nomeCampus, String instituicao, String uf) {
+    public Campus(int codigo,String nome) {
         this.codigo = codigo;
-        this.nomeCampus = nomeCampus;
-        this.instituicao = instituicao;
-        this.uf = uf;
+        this.nome = nome;
+      
         
         
+    }
+
+    public Campus(int aInt, String string, String string0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 
-    public String getNomeCampus() {
-        return nomeCampus;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeCampus(String nomeCampus) {
-        this.nomeCampus = nomeCampus;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getInstituicao() {
-        return instituicao;
-    }
-
-    public void setInstituicao(String instituicao) {
-        this.instituicao = instituicao;
-    }
-
-    public String getUf() {
-        return uf;
-    }
-
-    public void setUf(String uf) {
-        this.uf = uf;
-    }
-public static List<Campus> obterCampus()
+ 
+    public static List<Campus> obterCampus()
        throws ClassNotFoundException, SQLException {
     return CampusDAO.obterCampus();
 }

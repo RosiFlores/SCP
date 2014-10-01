@@ -47,7 +47,7 @@ public class BolsistaDAO extends DAO {
 
     public static Bolsista instanciarBolsista(ResultSet rs)
             throws SQLException{
-        Bolsista bolsista = new Bolsista(rs.getInt("matricula"),rs.getString("nomeBanco"),rs.getInt("agenciaBancaria"),rs.getInt("contaCorrente"));
+        Bolsista bolsista = new Bolsista(rs.getInt("matricula"),rs.getString("nomeBanco"),rs.getInt("agencia"),rs.getInt("contaBancaria"));
         
         return bolsista;
         
