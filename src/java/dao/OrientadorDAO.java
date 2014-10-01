@@ -48,4 +48,25 @@ public class OrientadorDAO extends DAO {
         
     }    
     
+    public static void gravar(Orientador orientador) throws SQLException, ClassNotFoundException {
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+        try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into orientador(matricula, homepageLattes)"
+                    + "values('" + orientador.getMatricula() + "'"
+                    + "" + orientador.getHomePageLattes() + "";
+
+            stringSQL = stringSQL + ")";
+            comando.execute(stringSQL);
+        } finally {
+            fecharConexao(conexao, comando);
+        }
+
+    }
+    
+    
+    
 }

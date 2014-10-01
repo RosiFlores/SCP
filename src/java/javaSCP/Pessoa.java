@@ -16,10 +16,6 @@ public interface Pessoa {
     public String getNome();
 
     public void setNome(String nome);
-    
-    public String getInstituicao();
-
-    public void setInstituicao(String instituicao);
 
     public Date getDataNascimento();
 

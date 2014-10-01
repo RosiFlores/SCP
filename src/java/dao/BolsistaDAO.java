@@ -12,6 +12,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import javaSCP.Bolsista;
+import javaSCP.Pessoa;
 
 /**
  *
@@ -47,12 +48,32 @@ public class BolsistaDAO extends DAO {
 
     public static Bolsista instanciarBolsista(ResultSet rs)
             throws SQLException{
-        Bolsista bolsista = new Bolsista(rs.getInt("matricula"),rs.getString("nomeBanco"),rs.getInt("agencia"),rs.getInt("contaCorrente"));
+        Bolsista bolsista = new Bolsista(rs.getInt("matricula"),rs.getString("nomeBanco"),rs.getInt("agencia"),rs.getInt("contaBancaria"));
         
         return bolsista;
         
     }
     
     
-    
+    public static void gravar (Bolsista bolsista, Pessoa pessoa) throws SQLException, ClassNotFoundException{
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+ try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into bolsista(matricula, contaCorrente, nomeBanco, agencia)"
+                    +"values('" + bolsista.getMatricula() + "', "
+                    + ""+ bolsista.getNome()+","
+                    + "" + bolsista.getContaCorrente() +","
+                    + "" + bolsista.getNomeBanco() +","
+                    + "" + bolsista.getAgencia() +",";
+            
+            stringSQL=stringSQL + ")";
+            comando.execute(stringSQL);
+        }finally{
+     fecharConexao(conexao, comando);
+ }
+
+    }
 }

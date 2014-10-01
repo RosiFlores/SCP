@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dao;
 
 /**
@@ -48,6 +43,25 @@ public class SubAreaDAO extends DAO {
         SubArea subArea = new SubArea(rs.getInt("codigo"), rs.getString("nome"));
 
         return subArea;
+
+    }
+    
+    public static void gravar (SubArea subarea) throws SQLException, ClassNotFoundException{
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+ try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into nucleo(codigo, nome)"
+                    +"values('" + subarea.getCodigo() + "', "
+                    + ""+ subarea.getNome()+",";
+            
+            stringSQL=stringSQL + ")";
+            comando.execute(stringSQL);
+        }finally{
+     fecharConexao(conexao, comando);
+ }
 
     }
 }

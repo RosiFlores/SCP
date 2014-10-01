@@ -27,11 +27,8 @@ public class Bolsista implements Pessoa {
         this.nomeBanco = nomeBanco;
         this.agencia = agencia;
         this.contaCorrente = contaCorrente;
+        
     }
-
-    
-    
-    
 
     public int getMatricula() {
         return matricula;
@@ -72,16 +69,6 @@ public class Bolsista implements Pessoa {
 
     @Override
     public void setNome(String nome) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getInstituicao() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setInstituicao(String instituicao) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
