@@ -30,7 +30,7 @@
                 <tr>
                     <c:forEach items="${orientadores}" var="orientador">
                         <td><c:out value="${orientador.matricula}" /></td>
-                         <td><c:out value="${orientador.nomeOrientador}" /></td>
+                         <td><c:out value="${orientador.nome}" /></td>
                           <td><a href="CadastrarOrientadorController?acao=prepararOperacao&operacao=Editar&matricula=<c:out value='${orientador.matricula}'/>"> Editar</a></td>
                           <td><a href="CadastrarOrientadorController?acao=prepararOperacao&operacao=Excluir&matricula=<c:out value='${orientador.matricula}'/>"> Excluir</a></td>
 

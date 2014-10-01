@@ -16,14 +16,6 @@
     </head>
     <body>
         <h2>Pesquisar Funcionário</h2>
-        <form>
-            <span>Insira o nome:</span> <input name="nome">
-            <button onClick="location.href = 'PesquisarFuncionario.java'">
-                <span>Pesquisar</span>
-            </button>
-
-        </form>
-
         <table border="1">
             <tr>
                 <th><span>Matricula</span>
@@ -36,7 +28,8 @@
             <tr>
                 <c:forEach items="${funcionarios}" var="funcionario">
                     <td><c:out value="${funcionario.matricula}" /></td>
-                     <td><c:out value="${funcionario.nomeFuncionario}" /></td>
+                    <%--  <td><c:out value="${funcionario.pessoas_codigo}" /></td>
+                            --%>
                       <td><a href="CadastrarFuncionarioController?acao=prepararOperacao&operacao=Editar&matricula=<c:out value='${funcionario.matricula}'/>"> Editar</a></td>
                       <td><a href="CadastrarFuncionarioController?acao=prepararOperacao&operacao=Excluir&matricula=<c:out value='${funcionario.matricula}'/>"> Excluir</a></td>
 

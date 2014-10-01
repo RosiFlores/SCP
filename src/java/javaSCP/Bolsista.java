@@ -19,14 +19,14 @@ public class Bolsista implements Pessoa {
     
     private int matricula;
     private String nomeBanco;
-    private int agenciaBancaria;
-    private int contaCorrente;
+    private int agencia;
+    private int contaBancaria;
 
-    public Bolsista(int matricula, String nomeBanco, int agenciaBancaria, int contaCorrente) {
+    public Bolsista(int matricula, String nomeBanco, int agencia, int contaBancaria) {
         this.matricula = matricula;
         this.nomeBanco = nomeBanco;
-        this.agenciaBancaria = agenciaBancaria;
-        this.contaCorrente = contaCorrente;
+        this.agencia = agencia;
+        this.contaBancaria = contaBancaria;
     }
 
     
@@ -49,20 +49,20 @@ public class Bolsista implements Pessoa {
         this.nomeBanco = nomeBanco;
     }
 
-    public int getAgenciaBancaria() {
-        return agenciaBancaria;
+    public int getAgencia() {
+        return agencia;
     }
 
-    public void setAgenciaBancaria(int agenciaBancaria) {
-        this.agenciaBancaria = agenciaBancaria;
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
     }
 
-    public int getContaCorrente() {
-        return contaCorrente;
+    public int getContaBancaria() {
+        return contaBancaria;
     }
 
-    public void setContaCorrente(int contaCorrente) {
-        this.contaCorrente = contaCorrente;
+    public void setContaBancaria(int contaBancaria) {
+        this.contaBancaria = contaBancaria;
     }
 
     @Override

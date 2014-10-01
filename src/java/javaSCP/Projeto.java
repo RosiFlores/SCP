@@ -17,10 +17,10 @@ import java.util.List;
  * @author Angelo
  */
 public class Projeto{ // herdar de subareas
-    private int idProjeto;
+    private int codigo;
     private String titulo;
     private int cargaHoraria;
-    private int Edital_idEdital;
+    private int edital_codigo;
     private String palavraChave;
     private int duracao;
     private Date dataInicio;
@@ -33,17 +33,15 @@ public class Projeto{ // herdar de subareas
     private int quantidadeBolsista;
     private String instituicaoParceira;
     private String grupoPesquisaCNPq;
-    private String nucleoOrientador;
     private String professorParticipante;
-    private int cargaHorariaProfessor;
     
     
-    public Projeto(int idProjeto, String titulo, int cargaHoraria, int Edital_idEdital, String palavrasChave, int duracao, Date dataInicio, Date dataTermino, float valorfinanciamento, Date dataFinanciamento, String tipoBolsa, String programa, String agenciaFomento, int quantidadeBolsista, String instituicaoParceira, String grupoPesquisaCNPq, String nucleoOrientador, String professorParticipante, int cargaHorariaProfessor) {
+    public Projeto(int codigo, String titulo, int cargaHoraria, int Edital_idEdital, String palavrasChave, int duracao, Date dataInicio, Date dataTermino, float valorfinanciamento, Date dataFinanciamento, String tipoBolsa, String programa, String agenciaFomento, int quantidadeBolsista, String instituicaoParceira, String grupoPesquisaCNPq, String nucleoOrientador, String professorParticipante, int cargaHorariaProfessor) {
         
-        this.idProjeto = idProjeto;
+        this.codigo = codigo;
         this.titulo = titulo;
         this.cargaHoraria = cargaHoraria;
-        this.Edital_idEdital = Edital_idEdital;
+        this.edital_codigo = edital_codigo;
         this.palavraChave = palavrasChave;
         this.duracao = duracao;
         this.dataInicio = dataInicio;
@@ -56,16 +54,9 @@ public class Projeto{ // herdar de subareas
         this.quantidadeBolsista = quantidadeBolsista;
         this.instituicaoParceira = instituicaoParceira;
         this.grupoPesquisaCNPq = grupoPesquisaCNPq;
-        this.nucleoOrientador = nucleoOrientador;
         this.professorParticipante = professorParticipante;
-        this.cargaHorariaProfessor = cargaHorariaProfessor;
     }
-    
-
-    
-   
-    
-
+  
     public String getTitulo() {
         return titulo;
     }
@@ -146,14 +137,6 @@ public class Projeto{ // herdar de subareas
         this.quantidadeBolsista = quantidadeBolsista;
     }
 
-    public String getNucleoOrientador() {
-        return nucleoOrientador;
-    }
-
-    public void setNucleoOrientador(String nucleoOrientador) {
-        this.nucleoOrientador = nucleoOrientador;
-    }
-
     public String getProfessorParticipante() {
         return professorParticipante;
     }
@@ -162,20 +145,12 @@ public class Projeto{ // herdar de subareas
         this.professorParticipante = professorParticipante;
     }
 
-    public int getCargaHorariaProfessor() {
-        return cargaHorariaProfessor;
-    }
-
-    public void setCargaHorariaProfessor(int cargaHorariaProfessor) {
-        this.cargaHorariaProfessor = cargaHorariaProfessor;
-    }
-
     public int getIdProjeto() {
-        return idProjeto;
+        return codigo;
     }
 
-    public void setIdProjeto(int idProjeto) {
-        this.idProjeto = idProjeto;
+    public void setIdProjeto(int codigo) {
+        this.codigo = codigo;
     }
 
     public int getCargaHoraria() {
@@ -186,12 +161,12 @@ public class Projeto{ // herdar de subareas
         this.cargaHoraria = CargaHoraria;
     }
 
-    public int getEdital_idEdital() {
-        return Edital_idEdital;
+    public int getEdital_codigo() {
+        return edital_codigo;
     }
 
-    public void setEdital_idEdital(int Edital_idEdital) {
-        this.Edital_idEdital = Edital_idEdital;
+    public void setEdital_codigo(int edital_codigo) {
+        this.edital_codigo = edital_codigo;
     }
 
     public float getValorfinanciamento() {

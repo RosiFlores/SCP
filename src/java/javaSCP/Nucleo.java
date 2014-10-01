@@ -10,30 +10,30 @@ import java.util.List;
  */
 public class Nucleo {
  
-    private int codigoNucleo;
-    private String nomeNucleo;
+    private int codigo;
+    private String nome;
 
     
-     public Nucleo(int codigoNucleo, String nomeNucleo) {
-        this.codigoNucleo = codigoNucleo;
-        this.nomeNucleo = nomeNucleo;
+     public Nucleo(int codigo, String nome) {
+        this.codigo = codigo;
+        this.nome = nome;
     }
     
-    public int getCodigoNucleo() {
+    public int getCodigo() {
                
-        return codigoNucleo;
+        return codigo;
     }
 
-    public void setCodigoNucleo(int codigoNucleo) {
-        this.codigoNucleo = codigoNucleo;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    public String getNomeNucleo() {
-        return nomeNucleo;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeNucleo(String nomeNucleo) {
-        this.nomeNucleo = nomeNucleo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
     
     public static List<Nucleo> obterNucleos()

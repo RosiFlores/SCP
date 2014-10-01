@@ -42,7 +42,7 @@ public class NucleoDAO extends DAO {
 
     public static Nucleo instanciarNucleo(ResultSet rs)
             throws SQLException{
-        Nucleo nucleo = new Nucleo(rs.getInt("codigoNucleo"),rs.getString("nomeNucleo"));
+        Nucleo nucleo = new Nucleo(rs.getInt("codigo"),rs.getString("nome"));
         
         return nucleo;
         
