@@ -11,35 +11,27 @@ import java.util.List;
  */
 public class Orientador implements Pessoa{
 
-    private String nomeOrientador;
+    
     private int matricula;
-    private String homePageCL;
+    private String homepageLattes;
     private String setor;
 
-    public Orientador( int matricula,String nomeOrientador, String homePageCL) {
+    public Orientador( int matricula, String homepageLattes) {
         
         this.matricula = matricula;
-        this.nomeOrientador = nomeOrientador;
-        this.homePageCL = homePageCL;
+        
+        this.homepageLattes = homepageLattes;
         
     }
 
-    public Orientador(int matricula,String nomeOrientador) {
-        this.nomeOrientador = nomeOrientador;
+    public Orientador(int matricula) {
+        
         this.matricula = matricula;
     }
 
     
 
     
-    public String getNomeOrientador() {
-        return nomeOrientador;
-    }
-
-    public void setNomeOrientador(String nomeOrientador) {
-        this.nomeOrientador = nomeOrientador;
-    }
-
     public int getMatricula() {
         return matricula;
     }
@@ -48,12 +40,12 @@ public class Orientador implements Pessoa{
         this.matricula = matricula;
     }
 
-    public String getHomePageCL() {
-        return homePageCL;
+    public String getHomepageLattes() {
+        return homepageLattes;
     }
 
-    public void setHomePageCL(String homePageCL) {
-        this.homePageCL = homePageCL;
+    public void setHomepageLattes(String homepageLattes) {
+        this.homepageLattes = homepageLattes;
     }
 
     public String getSetor() {

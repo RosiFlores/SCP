@@ -42,7 +42,7 @@ public class FuncionarioDAO extends DAO {
 
     public static Funcionario instanciarFuncionario(ResultSet rs)
             throws SQLException{
-        Funcionario funcionario = new Funcionario(rs.getInt("matricula"),rs.getString("nome"));
+        Funcionario funcionario = new Funcionario(rs.getInt("matricula"));
         
         return funcionario;
         

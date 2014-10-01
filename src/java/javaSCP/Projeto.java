@@ -17,7 +17,7 @@ import java.util.List;
  * @author Angelo
  */
 public class Projeto{ // herdar de subareas
-    private int idProjeto;
+    private int codigo;
     private String titulo;
     private int cargaHoraria;
     private int Edital_idEdital;
@@ -38,9 +38,9 @@ public class Projeto{ // herdar de subareas
     private int cargaHorariaProfessor;
     
     
-    public Projeto(int idProjeto, String titulo, int cargaHoraria, int Edital_idEdital, String palavrasChave, int duracao, Date dataInicio, Date dataTermino, float valorfinanciamento, Date dataFinanciamento, String tipoBolsa, String programa, String agenciaFomento, int quantidadeBolsista, String instituicaoParceira, String grupoPesquisaCNPq, String nucleoOrientador, String professorParticipante, int cargaHorariaProfessor) {
+    public Projeto(int codigo, String titulo, int cargaHoraria, int Edital_idEdital, String palavrasChave, int duracao, Date dataInicio, Date dataTermino, float valorfinanciamento, Date dataFinanciamento, String tipoBolsa, String programa, String agenciaFomento, int quantidadeBolsista, String instituicaoParceira, String grupoPesquisaCNPq, String nucleoOrientador, String professorParticipante, int cargaHorariaProfessor) {
         
-        this.idProjeto = idProjeto;
+        this.codigo = codigo;
         this.titulo = titulo;
         this.cargaHoraria = cargaHoraria;
         this.Edital_idEdital = Edital_idEdital;
@@ -59,6 +59,11 @@ public class Projeto{ // herdar de subareas
         this.nucleoOrientador = nucleoOrientador;
         this.professorParticipante = professorParticipante;
         this.cargaHorariaProfessor = cargaHorariaProfessor;
+    }
+
+    public Projeto(int codigo, String titulo) {
+        this.codigo = codigo;
+        this.titulo = titulo;
     }
     
 
@@ -170,12 +175,12 @@ public class Projeto{ // herdar de subareas
         this.cargaHorariaProfessor = cargaHorariaProfessor;
     }
 
-    public int getIdProjeto() {
-        return idProjeto;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setIdProjeto(int idProjeto) {
-        this.idProjeto = idProjeto;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public int getCargaHoraria() {

@@ -16,41 +16,36 @@
     </head>
     <body>
         <h2>Pesquisar Funcionário</h2>
-        <form>
-            <span>Insira o nome:</span> <input name="nome">
-            <button onClick="location.href = 'PesquisarFuncionario.java'">
-                <span>Pesquisar</span>
-            </button>
-
-        </form>
+       
 
         <table border="1">
             <tr>
                 <th><span>Matricula</span>
                 </th>
-                <th><span>Nome do Funcionário</span></th>
+                
                 <th colspan="2"><span>OPÇÕES</span>
                     <span></span></th>
             </tr>
 
-            <tr>
+            
                 <c:forEach items="${funcionarios}" var="funcionario">
+                    <tr>
                     <td><c:out value="${funcionario.matricula}" /></td>
-                     <td><c:out value="${funcionario.nomeFuncionario}" /></td>
+                
                       <td><a href="CadastrarFuncionarioController?acao=prepararOperacao&operacao=Editar&matricula=<c:out value='${funcionario.matricula}'/>"> Editar</a></td>
                       <td><a href="CadastrarFuncionarioController?acao=prepararOperacao&operacao=Excluir&matricula=<c:out value='${funcionario.matricula}'/>"> Excluir</a></td>
 
-            
+                      </tr>
                 </c:forEach>
-            </tr>
+            
         </table>
         
 <button onClick="location.href ='CadastrarFuncionarioController?acao=prepararOperacao&Operacao=Incluir'">
     <span>Incluir</span>
 </button> &nbsp;&nbsp;
 
-<button onClick="location.href = 'CadastrarFuncionario.java'">
-    <span>Inserir</span>
+<button onClick="location.href = 'index.jsp'">
+    <span>Voltar</span>
 </button>
 </body>
 </html>

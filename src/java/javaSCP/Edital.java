@@ -16,8 +16,8 @@ import java.util.List;
  * @author Angelo
  */
 public class Edital  implements Parametro{ //extends SubArea
-    private int numeroEdital;
-    private int anoEdital;
+    private int numero;
+    private int ano;
     private String tipoBolsa;
     private String subareaConhecimento;
     private int quantidadeBolsas;
@@ -26,18 +26,18 @@ public class Edital  implements Parametro{ //extends SubArea
     private int validadeEdital;
     private File anexos;
 
-    public Edital(int numeroEdital, int anoEdital) {
+    public Edital(int numero, int ano) {
         
-        this.numeroEdital = numeroEdital;
-        this.anoEdital = anoEdital;
+        this.numero = numero;
+        this.ano = ano;
     }
     
     
 
-    public Edital(int numeroEdital, int anoEdital, String tipoBolsa, String subareaConhecimento, int quantidadeBolsas, int validadeBolsa, float valorBolsa, int validadeEdital, File anexos, int codigo, String nome) {
+    public Edital(int numero, int ano, String tipoBolsa, String subareaConhecimento, int quantidadeBolsas, int validadeBolsa, float valorBolsa, int validadeEdital, File anexos, int codigo, String nome) {
         
-        this.numeroEdital = numeroEdital;
-        this.anoEdital = anoEdital;
+        this.numero = numero;
+        this.ano = ano;
         this.tipoBolsa = tipoBolsa;
         this.subareaConhecimento = subareaConhecimento;
         this.quantidadeBolsas = quantidadeBolsas;
@@ -49,20 +49,20 @@ public class Edital  implements Parametro{ //extends SubArea
 
     
     
-    public int getNumeroEdital() {
-        return numeroEdital;
+    public int getNumero() {
+        return numero;
     }
 
-    public void setNumeroEdital(int numeroEdital) {
-        this.numeroEdital = numeroEdital;
+    public void setNumero(int numeroEdital) {
+        this.numero = numeroEdital;
     }
 
-    public int getAnoEdital() {
-        return anoEdital;
+    public int getAno() {
+        return ano;
     }
 
-    public void setAnoEdital(int anoEdital) {
-        this.anoEdital = anoEdital;
+    public void setAno(int ano) {
+        this.ano = ano;
     }
 
     public String getTipoBolsa() {

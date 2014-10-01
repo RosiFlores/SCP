@@ -33,7 +33,7 @@ public class BolsistaDAO extends DAO {
             while (rs.next()) {
                 bolsista = instanciarBolsista(rs);
                 bolsistas.add(bolsista);
-                return bolsistas;
+                
             }
 
         } finally {
@@ -47,7 +47,7 @@ public class BolsistaDAO extends DAO {
 
     public static Bolsista instanciarBolsista(ResultSet rs)
             throws SQLException{
-        Bolsista bolsista = new Bolsista(rs.getInt("matricula"),rs.getString("nomeBanco"),rs.getInt("agenciaBancaria"),rs.getInt("contaCorrente"));
+        Bolsista bolsista = new Bolsista(rs.getInt("matricula"),rs.getString("nomeBanco"),rs.getInt("agencia"),rs.getInt("contaCorrente"));
         
         return bolsista;
         

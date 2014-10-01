@@ -43,7 +43,7 @@ public class ProjetoDAO extends DAO{
 }
      public static Projeto instanciarProjeto(ResultSet rs)
             throws SQLException{
-        Projeto projeto = new Projeto(rs.getInt("idProjeto"),rs.getString("titulo"),rs.getInt("cargaHoraria"),rs.getInt("Edital_idEdital"),rs.getString("palavraChave"),rs.getInt("duracao"),rs.getDate("dataInicio"),rs.getDate("dataTermino"),rs.getFloat("valorfinanciamento"),rs.getDate("dataFinanciamento"),rs.getString("tipoBolsa"),rs.getString("programa"),rs.getString("agenciaFomento"),rs.getInt("quantidadeBolsista"),rs.getString("instituicaoParceira"),rs.getString("grupoPesquisaCNPq"),rs.getString("nucleoOrientador"),rs.getString("professorParticipante"),rs.getInt("cargaHorariaProfessor"));
+        Projeto projeto = new Projeto(rs.getInt("codigo"),rs.getString("titulo"));
         
         //int idProjeto, String titulo, int CargaHoraria, int Edital_idEdital, String palavrasChave,
         // int duracao, Date dataInicio, Date dataTermino, float valorfinanciamento, Date dataFinanciamento, 
