@@ -67,5 +67,26 @@
             </div>
         </center>
 
+<<<<<<< HEAD
+=======
+                <button class="botao1" onclick="location.href='PesquisarSubAreaController'">
+                        <span>Pesquisar SubArea de Conhecimento</span>
+                </button><br/><br/>
+
+                <button class="botao" onclick="location.href='PesquisarTipoBolsaController'">
+                        <span>Pesquisar Tipo de Bolsa</span>
+                </button>
+                <button class="botao1" onclick="location.href='PesquisarTipoCursoController'">
+                        <span>Pesquisar Tipos de Cursos</span>
+                </button>
+                <button class="botao" onclick="location.href='PesquisarInstituicaoController'">
+                        <span>Pesquisar Instituições</span>
+                </button>
+
+            </center>
+
+        </div>
+        
+>>>>>>> f7cab06ab8feebceb9cdddc9ac6e47befe9c9425
     </body>
 </html>
