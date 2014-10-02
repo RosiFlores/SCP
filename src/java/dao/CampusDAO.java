@@ -40,17 +40,43 @@ public class CampusDAO extends DAO {
         }finally{
             fecharConexao(conexao, comando);
         }
+        
+          
         return campus;
         
     }
     
     public static Campus instanciarCampus(ResultSet rs)
             throws SQLException{
-        Campus umCampus = new Campus(rs.getInt("codigo"), rs.getString("nomeCampus"), rs.getString("instituicao"), rs.getString("uf"));
+        Campus umCampus = new Campus(rs.getInt("codigo"), rs.getString("nome"));
     
         return umCampus;
     } 
     
     
+    public static void gravar(Campus campus) throws SQLException, ClassNotFoundException {
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+        try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into campus(codigo, nome)"
+                    + "values('" + campus.getCodigo()+ "', "
+                    + ""+ campus.getNome()+"";
+                    
+            stringSQL = stringSQL + ")";
+            comando.execute(stringSQL);
+        } finally {
+            fecharConexao(conexao, comando);
+        }
+
+    }
     
-}
+    
+    
+    
+        
+        
+    }
+    

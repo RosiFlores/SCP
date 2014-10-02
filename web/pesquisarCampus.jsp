@@ -28,9 +28,7 @@
                 <td><span>ID</span>
                 </td>
                 <td><span>NOME DO CAMPUS</span></td>
-                <td><span>Instituição</span>
-                </td>
-                <td><span>UF</span></td>
+                
                 <td colspan="2"><span>OPÇÕES</span>
                     <span></span></td>
 
@@ -38,22 +36,21 @@
 
             <c:forEach items="${campus}" var="campus">
                 <tr>
-                    <td><c.out value="${campus.codigo}" /></td>
-            <td><c.out value="${campus.nomeCampus}" /></td>
-        <td><c.out value="${campus.instituicao}" /></td>
-    <td><c.out value="${campus.uf}" /></td>
+                    <td><c:out value="${campus.codigo}" /></td>
+            <td><c:out value="${campus.nome}" /></td>
+            
+            <%--<td><c.out value="${campus.instituicao_codigo}" /></td>--%>
+    
 
 <td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Editar&codCampus=<c:out value='${campus.codigo}'/>"> Editar</a></td>
 <td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Excluir&codCampus=<c:out value='${campus.codigo}'/>"> Excluir</a></td>
 
-<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Editar&codCampus=<c:out value='${campus.nomeCampus}'/>"> Editar</a></td>
-<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Excluir&codCampus=<c:out value='${campus.nomeCampus}'/>"> Excluir</a></td>
 
-<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Editar&codCampus=<c:out value='${campus.instituicao}'/>"> Editar</a></td>
-<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Excluir&codCampus=<c:out value='${campus.instituicao}'/>"> Excluir</a></td>
 
-<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Editar&codCampus=<c:out value='${campus.uf}'/>"> Editar</a></td>
-<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Excluir&codCampus=<c:out value='${campus.uf}'/>"> Excluir</a></td>
+<%--<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Editar&codCampus=<c:out value='${campus.instituicao_codigo}'/>"> Editar</a></td>
+<td><a href="CadastrarCampusController?acao=prepararOperacao&operacao=Excluir&codCampus=<c:out value='${campus.instituicao_codigo}'/>"> Excluir</a></td>--%>
+
+
 </tr> 
 </c:forEach>
 
@@ -64,8 +61,8 @@
     <span>Incluir</span>
 </button> &nbsp;&nbsp;
 
-<button onClick="location.href = 'CadastrarCampusController.java'">
-    <span>Inserir</span>
+<button onClick="location.href = 'index.jsp'">
+    <span>Voltar</span>
 </button>
 </body>
 </html>

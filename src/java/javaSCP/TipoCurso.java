@@ -3,44 +3,29 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
-
-
- UF, Instituição e campus
-
-
  */
 
 package javaSCP;
 
-import dao.CampusDAO;
+import dao.TipoCursoDAO;
 import java.sql.SQLException;
 import java.util.List;
 
 /**
  *
- * @author Rosi
+ * @author Angelo
  */
-public class Campus { //extends Instituicao
+public class TipoCurso {
     
- private int codigo;
+    private int codigo;
     private String nome;
     
 
-    public Campus(int codigo,String nome) {
-        this.codigo = codigo;
+    public TipoCurso( int codigo,String nome) {
         this.nome = nome;
-    }
-    
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
         this.codigo = codigo;
+        
     }
-    
-    
 
     public String getNome() {
         return nome;
@@ -50,60 +35,49 @@ public class Campus { //extends Instituicao
         this.nome = nome;
     }
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
     
-public static List<Campus> obterCampus()
+    
+    public static List<TipoCurso> obterTipoCursos()
        throws ClassNotFoundException, SQLException {
-    return CampusDAO.obterCampus();
+    return TipoCursoDAO.obterTipoCursos();
 }
-    
-   
-    
-    
-    
 }
 =======
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
-
-
- UF, Instituição e campus
-
-
  */
 
 package javaSCP;
 
-import dao.CampusDAO;
+import dao.TipoCursoDAO;
 import java.sql.SQLException;
 import java.util.List;
 
 /**
  *
- * @author Rosi
+ * @author Angelo
  */
-public class Campus { //extends Instituicao
+public class TipoCurso {
     
- private int codigo;
+    private int codigo;
     private String nome;
     
 
-    public Campus(int codigo,String nome) {
-        this.codigo = codigo;
+    public TipoCurso( int codigo,String nome) {
         this.nome = nome;
-    }
-    
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
         this.codigo = codigo;
+        
     }
-    
-    
 
     public String getNome() {
         return nome;
@@ -113,15 +87,19 @@ public class Campus { //extends Instituicao
         this.nome = nome;
     }
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
     
-public static List<Campus> obterCampus()
+    
+    public static List<TipoCurso> obterTipoCursos()
        throws ClassNotFoundException, SQLException {
-    return CampusDAO.obterCampus();
+    return TipoCursoDAO.obterTipoCursos();
 }
-    
-   
-    
-    
-    
 }
 >>>>>>> f7cab06ab8feebceb9cdddc9ac6e47befe9c9425

@@ -35,17 +35,32 @@ public class NucleoDAO extends DAO {
             fecharConexao(conexao, comando);
         }
         return nucleos;
-        
-        
-
     }
 
     public static Nucleo instanciarNucleo(ResultSet rs)
             throws SQLException{
-        Nucleo nucleo = new Nucleo(rs.getInt("codigoNucleo"),rs.getString("nomeNucleo"));
+        Nucleo nucleo = new Nucleo(rs.getInt("codigo"),rs.getString("nome"));
         
         return nucleo;
         
     }    
     
+    public static void gravar (Nucleo nucleo) throws SQLException, ClassNotFoundException{
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+ try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into nucleo(codigo, nome)"
+                    +"values('" + nucleo.getCodigo() + "', "
+                    + ""+ nucleo.getNome()+",";
+            
+            stringSQL=stringSQL + ")";
+            comando.execute(stringSQL);
+        }finally{
+     fecharConexao(conexao, comando);
+ }
+
+    }
 }

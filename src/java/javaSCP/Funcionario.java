@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,26 +16,16 @@ import java.util.List;
  *
  * @author Angelo
  */
-public class Funcionario implements Pessoa {
+public class Funcionario extends Pessoa {
     private int matricula;
-    private String nomeFuncionario;
+    
 
-    public Funcionario(int matricula, String nomeFuncionario) {
+    public Funcionario(int matricula) {
         this.matricula = matricula;
-        this.nomeFuncionario = nomeFuncionario;
+        
     }
 
-    public String getNomeFuncionario() {
-        return nomeFuncionario;
-    }
-
-    public void setNomeFuncionario(String nomeFuncionario) {
-        this.nomeFuncionario = nomeFuncionario;
-    }
-    
-    
-
-    public int getMatricula() {
+     public int getMatricula() {
         return matricula;
     }
 
@@ -42,6 +33,7 @@ public class Funcionario implements Pessoa {
         this.matricula = matricula;
     }
         
+<<<<<<< HEAD
     @Override
     public String getNome() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -49,16 +41,6 @@ public class Funcionario implements Pessoa {
 
     @Override
     public void setNome(String nome) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getInstituicao() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setInstituicao(String instituicao) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -331,9 +313,53 @@ public class Funcionario implements Pessoa {
     public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+=======
+>>>>>>> origin/master
 
     public static List<Funcionario> obterFuncionarios()
             throws ClassNotFoundException, SQLException {
         return FuncionarioDAO.obterFuncionarios();
     }
 }
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaSCP;
+
+import dao.FuncionarioDAO;
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
+
+/**
+ *
+ * @author Angelo
+ */
+public class Funcionario extends Pessoa {
+    private int matricula;
+    
+
+    public Funcionario(int matricula) {
+        this.matricula = matricula;
+        
+    }
+
+     public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+        
+
+    public static List<Funcionario> obterFuncionarios()
+            throws ClassNotFoundException, SQLException {
+        return FuncionarioDAO.obterFuncionarios();
+    }
+}
+>>>>>>> f7cab06ab8feebceb9cdddc9ac6e47befe9c9425

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,23 +16,20 @@ import java.util.List;
  *
  * @author Angelo
  */
-public class Bolsista implements Pessoa {
+public class Bolsista extends Pessoa {
     
     private int matricula;
     private String nomeBanco;
-    private int agenciaBancaria;
+    private int agencia;
     private int contaCorrente;
 
-    public Bolsista(int matricula, String nomeBanco, int agenciaBancaria, int contaCorrente) {
+    public Bolsista(int matricula, String nomeBanco, int agencia, int contaCorrente) {
         this.matricula = matricula;
         this.nomeBanco = nomeBanco;
-        this.agenciaBancaria = agenciaBancaria;
+        this.agencia = agencia;
         this.contaCorrente = contaCorrente;
+        
     }
-
-    
-    
-    
 
     public int getMatricula() {
         return matricula;
@@ -49,12 +47,12 @@ public class Bolsista implements Pessoa {
         this.nomeBanco = nomeBanco;
     }
 
-    public int getAgenciaBancaria() {
-        return agenciaBancaria;
+    public int getAgencia() {
+        return agencia;
     }
 
-    public void setAgenciaBancaria(int agenciaBancaria) {
-        this.agenciaBancaria = agenciaBancaria;
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
     }
 
     public int getContaCorrente() {
@@ -65,6 +63,7 @@ public class Bolsista implements Pessoa {
         this.contaCorrente = contaCorrente;
     }
 
+<<<<<<< HEAD
     @Override
     public String getNome() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -72,16 +71,6 @@ public class Bolsista implements Pessoa {
 
     @Override
     public void setNome(String nome) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getInstituicao() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setInstituicao(String instituicao) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -354,6 +343,8 @@ public class Bolsista implements Pessoa {
     public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+=======
+>>>>>>> origin/master
 public static List<Bolsista> obterBolsista()
        throws ClassNotFoundException, SQLException {
     return BolsistaDAO.obterBolsista();
@@ -361,3 +352,79 @@ public static List<Bolsista> obterBolsista()
 }
     
 }
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaSCP;
+
+import dao.BolsistaDAO;
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
+
+/**
+ *
+ * @author Angelo
+ */
+public class Bolsista extends Pessoa {
+    
+    private int matricula;
+    private String nomeBanco;
+    private int agencia;
+    private int contaCorrente;
+
+    public Bolsista(int matricula, String nomeBanco, int agencia, int contaCorrente) {
+        this.matricula = matricula;
+        this.nomeBanco = nomeBanco;
+        this.agencia = agencia;
+        this.contaCorrente = contaCorrente;
+    }
+
+    
+    
+    
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getNomeBanco() {
+        return nomeBanco;
+    }
+
+    public void setNomeBanco(String nomeBanco) {
+        this.nomeBanco = nomeBanco;
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+
+    public int getContaCorrente() {
+        return contaCorrente;
+    }
+
+    public void setContaCorrente(int contaCorrente) {
+        this.contaCorrente = contaCorrente;
+    }
+
+public static List<Bolsista> obterBolsista()
+       throws ClassNotFoundException, SQLException {
+    return BolsistaDAO.obterBolsista();
+    
+}
+    
+}
+>>>>>>> f7cab06ab8feebceb9cdddc9ac6e47befe9c9425

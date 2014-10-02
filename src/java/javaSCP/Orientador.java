@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package javaSCP;
 
 import dao.OrientadorDAO;
@@ -9,63 +10,42 @@ import java.util.List;
  *
  * @author Mayara Amanda
  */
-public class Orientador implements Pessoa{
+public class Orientador extends Pessoa{
 
-    private String nomeOrientador;
     private int matricula;
-    private String homePageCL;
+    private String homepageLattes;
     private String setor;
 
-    public Orientador( int matricula,String nomeOrientador, String homePageCL) {
+    public Orientador( int matricula, String homepageLattes) {
         
         this.matricula = matricula;
-        this.nomeOrientador = nomeOrientador;
-        this.homePageCL = homePageCL;
+        this.homepageLattes = homepageLattes;
         
     }
 
-    public Orientador(int matricula,String nomeOrientador) {
-        this.nomeOrientador = nomeOrientador;
-        this.matricula = matricula;
-    }
-
-    
-
-    
-    public String getNomeOrientador() {
-        return nomeOrientador;
-    }
-
-    public void setNomeOrientador(String nomeOrientador) {
-        this.nomeOrientador = nomeOrientador;
-    }
-
+    public Orientador(int matricula) {
+          this.matricula = matricula;
+    }    
     public int getMatricula() {
         return matricula;
-    }
-    
+    }    
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
-
-    public String getHomePageCL() {
-        return homePageCL;
+    public String getHomepageLattes() {
+        return homepageLattes;
     }
-
-    public void setHomePageCL(String homePageCL) {
-        this.homePageCL = homePageCL;
+    public void setHomepageLattes(String homepageLattes) {
+        this.homepageLattes = homepageLattes;
     }
-
     public String getSetor() {
         return setor;
     }
-
     public void setSetor(String setor) {
         this.setor = setor;
+<<<<<<< HEAD
     }
     
-    
-
     @Override
     public String getNome() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -75,17 +55,7 @@ public class Orientador implements Pessoa{
     public void setNome(String nome) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    @Override
-    public String getInstituicao() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setInstituicao(String instituicao) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
     @Override
     public Date getDataNascimento() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -355,9 +325,69 @@ public class Orientador implements Pessoa{
     public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public String getHomePageLattes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
     public static List<Orientador> obterOrientadores()
             throws ClassNotFoundException, SQLException {
         return OrientadorDAO.obterOrientadores();
     }
 }
+=======
+package javaSCP;
+
+import dao.OrientadorDAO;
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
+
+/**
+ *
+ * @author Mayara Amanda
+ */
+public class Orientador extends Pessoa{
+
+    
+    private int matricula;
+    private String homepageLattes;
+    private String setor;
+
+    public Orientador( int matricula, String homepageLattes) {
+        
+        this.matricula = matricula;
+        this.homepageLattes = homepageLattes;
+        
+    }
+
+    public Orientador(int matricula) {
+          this.matricula = matricula;
+    }    
+    public int getMatricula() {
+        return matricula;
+    }    
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+    public String getHomepageLattes() {
+        return homepageLattes;
+    }
+    public void setHomepageLattes(String homepageLattes) {
+        this.homepageLattes = homepageLattes;
+    }
+    public String getSetor() {
+        return setor;
+    }
+    public void setSetor(String setor) {
+        this.setor = setor;
+    }    
+
+    
+    public static List<Orientador> obterOrientadores()
+            throws ClassNotFoundException, SQLException {
+        return OrientadorDAO.obterOrientadores();
+    }
+}
+>>>>>>> f7cab06ab8feebceb9cdddc9ac6e47befe9c9425

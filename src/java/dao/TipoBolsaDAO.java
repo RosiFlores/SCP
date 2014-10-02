@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dao;
 
 import java.sql.Connection;
@@ -19,6 +13,7 @@ import javaSCP.TipoBolsa;
  * @author Angelo
  */
 public class TipoBolsaDAO extends DAO {
+
     public static List<TipoBolsa> obterTipoBolsas()
             throws ClassNotFoundException, SQLException {
         Connection conexao = null;
@@ -49,6 +44,25 @@ public class TipoBolsaDAO extends DAO {
         TipoBolsa tipoBolsa = new TipoBolsa(rs.getInt("codigo"), rs.getString("nome"));
 
         return tipoBolsa;
+
+    }
+
+    public static void gravar(TipoBolsa tipobolsa) throws SQLException, ClassNotFoundException {
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+        try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into tipobolsa(codigo, nome)"
+                    + "values('" + tipobolsa.getCodigo() + "', "
+                    + "" + tipobolsa.getNome() + ",";
+
+            stringSQL = stringSQL + ")";
+            comando.execute(stringSQL);
+        } finally {
+            fecharConexao(conexao, comando);
+        }
 
     }
 }

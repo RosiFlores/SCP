@@ -18,10 +18,10 @@
 
         <table BORDER="1">
             <tr>
-                <td><span>ID</span> </td>
+                <td><span>Código</span> </td>
                 <td><span>Titulo</span></td>
-                <td><span>CargaHoraria</span></td>
-                <%--<td><span>Edital_idEdital</span></td>--%>
+                <%--<td><span>CargaHoraria</span></td>
+                <td><span>Edital_idEdital</span></td>
                 <td><span>palavraChave</span></td>
                 <td><span>duracao</span></td>
                 <td><span>dataInicio</span></td>
@@ -37,7 +37,7 @@
                 <td><span>nucleoOrientador</span></td>
                 <td><span>professorParticipante</span></td>
                 <td><span>cargaHorariaProfessor</span></td>
-
+                    --%>
 
 
                 <td colspan="2"><span>OPÇÕES</span>
@@ -46,10 +46,10 @@
             </tr>
             <c:forEach items="${projetos}" var="projeto">
                 <tr>
-                    <td><c:out value="${projeto.idProjeto}" /></td>
+                    <td><c:out value="${projeto.codigo}" /></td>
                     <td><c:out value="${projeto.titulo}" /></td>
-                    <td><c:out value="${projeto.cargaHoraria}"/></td>
-                    <%--<td><c:out value="${projeto.Edital_idEdital}"/></td>--%>
+                    <%--<td><c:out value="${projeto.cargaHoraria}"/></td>
+                    <td><c:out value="${projeto.Edital_idEdital}"/></td>
                     <td><c:out value="${projeto.palavraChave}"/></td>
                     <td><c:out value="${projeto.duracao}"/></td>
                     <td><c:out value="${projeto.dataInicio}"/></td>
@@ -65,9 +65,9 @@
                     <td><c:out value="${projeto.nucleoOrientador}"/></td>
                     <td><c:out value="${projeto.professorParticipante}"/></td>
                     <td><c:out value="${projeto.cargaHorariaProfessor}"/></td>
-                    
-                    <td><a href="CadastrarCursoController?acao=prepararOperacao&operacao=Editar&codigo=<c:out value='${projeto.idProjeto}'/>"> Editar</a></td>
-                    <td><a href="CadastrarCursoController?acao=prepararOperacao&operacao=Excluir&codigo=<c:out value='${projeto.idProjeto}'/>"> Excluir</a></td>
+                    --%>
+                    <td><a href="CadastrarCursoController?acao=prepararOperacao&operacao=Editar&codigo=<c:out value='${projeto.codigo}'/>"> Editar</a></td>
+                    <td><a href="CadastrarCursoController?acao=prepararOperacao&operacao=Excluir&codigo=<c:out value='${projeto.codigo}'/>"> Excluir</a></td>
                 </tr>
             </c:forEach>
         </table><br/>

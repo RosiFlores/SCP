@@ -31,29 +31,49 @@ public class EditalDAO extends DAO {
             conexao = BD.getConexao();
             comando = conexao.createStatement();
             ResultSet rs = comando.executeQuery("select * from edital");
+
             while (rs.next()) {
                 edital = instanciarEdital(rs);
                 editais.add(edital);
-                return editais;
+
             }
 
         } finally {
             fecharConexao(conexao, comando);
         }
         return editais;
-        
-        
 
     }
 
     public static Edital instanciarEdital(ResultSet rs)
-            throws SQLException{
-        Edital edital = new Edital(rs.getInt("numeroEdital"),rs.getInt("anoEdital"));
-        
+            throws SQLException {
+        Edital edital = new Edital(rs.getInt("numero"), rs.getInt("ano"));
+
         return edital;
-        
+
     }
+
     
-    
-    
+     public static void gravar(Edital edital) throws SQLException, ClassNotFoundException {
+        Connection conexao = null;
+        Statement comando = null;
+        String stringSQL;
+        try {
+            conexao = BD.getConexao();
+            comando = conexao.createStatement();
+            stringSQL = "insert into edital(codigo, numero, ano, validadeEdital, valorBolsa, quantidadeBolsa, anexos)"
+                    + "values('" + edital.getCodigo() + "', "
+                    + "" + edital.getAno() + ","
+                    + "'" + edital.getValidadeEdital() + "',"
+                    + "'" + edital.getValorBolsa() + "',"
+                    + "'" + edital.getQuantidadeBolsas()+ "',"
+                    + "" + edital.getAnexos()+ "'";
+
+            stringSQL = stringSQL + ")";
+            comando.execute(stringSQL);
+        } finally {
+            fecharConexao(conexao, comando);
+        }
+
+    }
 }
