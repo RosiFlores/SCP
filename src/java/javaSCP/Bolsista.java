@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author Angelo
  */
-public class Bolsista implements Pessoa {
+public class Bolsista extends Pessoa {
     
     private int matricula;
     private String nomeBanco;
@@ -62,6 +62,7 @@ public class Bolsista implements Pessoa {
         this.contaCorrente = contaCorrente;
     }
 
+<<<<<<< HEAD
     @Override
     public String getNome() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -341,6 +342,8 @@ public class Bolsista implements Pessoa {
     public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+=======
+>>>>>>> origin/master
 public static List<Bolsista> obterBolsista()
        throws ClassNotFoundException, SQLException {
     return BolsistaDAO.obterBolsista();

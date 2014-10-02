@@ -34,26 +34,34 @@
                 <button class="botao1" onclick="location.href='PesquisarFuncionarioController'">
                         <span>Pesquisar Funcionario</span>
                 </button>   
+                
+                <button class="botao" onclick="location.href='PesquisarInstituicaoController'">
+                        <span>Pesquisar Instituições</span>
+                </button><br/><br/>
 
                 <button class="botao1" onclick="location.href='PesquisarNucleoController'">
                         <span>Pesquisar Núcleo</span>
-                </button><br/><br/>
+                </button>
                 
                 <button class="botao" onclick="location.href='PesquisarOrientadorController'">
-                        <span>Pesquisar Orientador</span>
+                        <span>Pesquisar Professor Orientador</span>
                 </button>
 
                 <button class="botao" onclick="location.href='PesquisarProjetoController'">
                         <span>Pesquisar Projeto</span>
-                </button>
+                </button><br/><br/>
 
                 <button class="botao1" onclick="location.href='PesquisarSubAreaController'">
                         <span>Pesquisar SubArea de Conhecimento</span>
-                </button><br/><br/>
+                </button>
 
                 <button class="botao" onclick="location.href='PesquisarTipoBolsaController'">
                         <span>Pesquisar Tipo de Bolsa</span>
                 </button>
+                <button class="botao1" onclick="location.href='PesquisarTipoCursoController'">
+                        <span>Pesquisar Tipos de Cursos</span>
+                </button><br/><br/>
+                
 
             </center>
 

@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author Angelo
  */
-public class Funcionario implements Pessoa {
+public class Funcionario extends Pessoa {
     private int matricula;
     
 
@@ -32,6 +32,7 @@ public class Funcionario implements Pessoa {
         this.matricula = matricula;
     }
         
+<<<<<<< HEAD
     @Override
     public String getNome() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -311,6 +312,8 @@ public class Funcionario implements Pessoa {
     public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+=======
+>>>>>>> origin/master
 
     public static List<Funcionario> obterFuncionarios()
             throws ClassNotFoundException, SQLException {

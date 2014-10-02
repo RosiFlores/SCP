@@ -228,4 +228,12 @@ public class Projeto{ // herdar de subareas
       
     
  }
+
+    public String getCoOrientador() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getCronograma() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

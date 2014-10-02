@@ -9,9 +9,8 @@ import java.util.List;
  *
  * @author Mayara Amanda
  */
-public class Orientador implements Pessoa{
+public class Orientador extends Pessoa{
 
-    
     private int matricula;
     private String homepageLattes;
     private String setor;
@@ -19,41 +18,31 @@ public class Orientador implements Pessoa{
     public Orientador( int matricula, String homepageLattes) {
         
         this.matricula = matricula;
-        
         this.homepageLattes = homepageLattes;
         
     }
 
     public Orientador(int matricula) {
-        
-        this.matricula = matricula;
-    }
-
-    
-
-    
+          this.matricula = matricula;
+    }    
     public int getMatricula() {
         return matricula;
-    }
-    
+    }    
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
-
     public String getHomepageLattes() {
         return homepageLattes;
     }
-
     public void setHomepageLattes(String homepageLattes) {
         this.homepageLattes = homepageLattes;
     }
-
     public String getSetor() {
         return setor;
     }
-
     public void setSetor(String setor) {
         this.setor = setor;
+<<<<<<< HEAD
     }
     
     @Override
@@ -335,6 +324,11 @@ public class Orientador implements Pessoa{
     public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public String getHomePageLattes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
     public static List<Orientador> obterOrientadores()
             throws ClassNotFoundException, SQLException {

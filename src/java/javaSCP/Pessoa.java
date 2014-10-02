@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package javaSCP;
 
 import java.util.Date;
@@ -12,118 +11,270 @@ import java.util.Date;
  *
  * @author Angelo
  */
-public interface Pessoa {
-    public String getNome();
+public class Pessoa {
 
-    public void setNome(String nome);
+    private String nome;
+    private String instituicao;
+    private Date dataNascimento;
+    private String estadoCivil;
+    private String nacionalidade;
+    private String ufNascimento;
+    private String nomeMae;
+    private String nomePai;
+    private String naturalidade;
+    private String grupoSanguinio;
+    private String fatorRH;
+    private String sexo;
+    private String necessidadeEspecial;
+    private String cor;
+    private String escolaridade;
+    private String rua;
+    private int numero;
+    private String complemento;
+    private String bairro;
+    private String cidade;
+    private int cep;
+    private String uf;
+    private String pais;
+    private int telefone;
+    private String email;
+    private int rg;
+    private String orgaoExpedidor;
+    private int TituloEleitor;
+    private int numeroComprovanteMilitar;
 
-    public Date getDataNascimento();
+    public String getNome() {
+        return nome;
+    }
 
-    public void setDataNascimento(Date dataNascimento);
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-    public String getEstadoCivil();
+    public String getInstituicao() {
+        return instituicao;
+    }
 
-    public void setEstadoCivil(String estadoCivil);
+    public void setInstituicao(String instituicao) {
+        this.instituicao = instituicao;
+    }
 
-    public String getNacionalidade();
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
 
-    public void setNacionalidade(String nacionalidade);
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
 
-    public String getUfNascimento();
+    public String getEstadoCivil() {
+        return estadoCivil;
+    }
 
-    public void setUfNascimento(String ufNascimento);
+    public void setEstadoCivil(String estadoCivil) {
+        this.estadoCivil = estadoCivil;
+    }
 
-    public String getNomeMae();
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
 
-    public void setNomeMae(String nomeMae);
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
 
-    public String getNomePai();
+    public String getUfNascimento() {
+        return ufNascimento;
+    }
 
-    public void setNomePai(String nomePai);
+    public void setUfNascimento(String ufNascimento) {
+        this.ufNascimento = ufNascimento;
+    }
 
-    public String getNaturalidade();
+    public String getNomeMae() {
+        return nomeMae;
+    }
 
-    public void setNaturalidade(String naturalidade);
+    public void setNomeMae(String nomeMae) {
+        this.nomeMae = nomeMae;
+    }
 
-    public String getGrupoSanguinio();
+    public String getNomePai() {
+        return nomePai;
+    }
 
-    public void setGrupoSanguinio(String grupoSanguinio);
+    public void setNomePai(String nomePai) {
+        this.nomePai = nomePai;
+    }
 
-    public String getFatorRH();
+    public String getNaturalidade() {
+        return naturalidade;
+    }
 
-    public void setFatorRH(String fatorRH);
+    public void setNaturalidade(String naturalidade) {
+        this.naturalidade = naturalidade;
+    }
 
-    public String getSexo();
+    public String getGrupoSanguinio() {
+        return grupoSanguinio;
+    }
 
-    public void setSexo(String sexo);
+    public void setGrupoSanguinio(String grupoSanguinio) {
+        this.grupoSanguinio = grupoSanguinio;
+    }
 
-    public String getNecessidadeEspecial();
+    public String getFatorRH() {
+        return fatorRH;
+    }
 
-    public void setNecessidadeEspecial(String necessidadeEspecial);
+    public void setFatorRH(String fatorRH) {
+        this.fatorRH = fatorRH;
+    }
 
-    public String getCor();
+    public String getSexo() {
+        return sexo;
+    }
 
-    public void setCor(String cor);
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
 
-    public String getEscolaridade();
+    public String getNecessidadeEspecial() {
+        return necessidadeEspecial;
+    }
 
-    public void setEscolaridade(String escolaridade);
+    public void setNecessidadeEspecial(String necessidadeEspecial) {
+        this.necessidadeEspecial = necessidadeEspecial;
+    }
 
-    public String getRua();
+    public String getCor() {
+        return cor;
+    }
 
-    public void setRua(String rua);
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
 
-    public int getNumero();
+    public String getEscolaridade() {
+        return escolaridade;
+    }
 
-    public void setNumero(int numero);
+    public void setEscolaridade(String escolaridade) {
+        this.escolaridade = escolaridade;
+    }
 
-    public String getComplemento();
+    public String getRua() {
+        return rua;
+    }
 
-    public void setComplemento(String complemento);
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
 
-    public String getBairro();
+    public int getNumero() {
+        return numero;
+    }
 
-    public void setBairro(String bairro);
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
-    public String getCidade();
+    public String getComplemento() {
+        return complemento;
+    }
 
-    public void setCidade(String cidade);
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
+    }
 
-    public int getCep();
+    public String getBairro() {
+        return bairro;
+    }
 
-    public void setCep(int cep);
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
 
-    public String getUf();
+    public String getCidade() {
+        return cidade;
+    }
 
-    public void setUf(String uf);
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
 
-    public String getPais();
+    public int getCep() {
+        return cep;
+    }
 
-    public void setPais(String pais);
+    public void setCep(int cep) {
+        this.cep = cep;
+    }
 
-    public int getTelefone();
+    public String getUf() {
+        return uf;
+    }
 
-    public void setTelefone(int telefone);
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
 
-    public String getEmail();
+    public String getPais() {
+        return pais;
+    }
 
-    public void setEmail(String email);
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
 
-    public int getRg();
+    public int getTelefone() {
+        return telefone;
+    }
 
-    public void setRg(int rg);
+    public void setTelefone(int telefone) {
+        this.telefone = telefone;
+    }
 
-    public String getOrgaoExpedidor();
+    public String getEmail() {
+        return email;
+    }
 
-    public void setOrgaoExpedidor(String orgaoExpedidor);
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-    public int getTituloEleitor();
+    public int getRg() {
+        return rg;
+    }
 
-    public void setTituloEleitor(int tituloEleitor);
+    public void setRg(int rg) {
+        this.rg = rg;
+    }
 
-    public int getNumeroComprovanteMilitar();
+    public String getOrgaoExpedidor() {
+        return orgaoExpedidor;
+    }
 
-    public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar);
+    public void setOrgaoExpedidor(String orgaoExpedidor) {
+        this.orgaoExpedidor = orgaoExpedidor;
+    }
+
+    public int getTituloEleitor() {
+        return TituloEleitor;
+    }
+
+    public void setTituloEleitor(int TituloEleitor) {
+        this.TituloEleitor = TituloEleitor;
+    }
+
+    public int getNumeroComprovanteMilitar() {
+        return numeroComprovanteMilitar;
+    }
+
+    public void setNumeroComprovanteMilitar(int numeroComprovanteMilitar) {
+        this.numeroComprovanteMilitar = numeroComprovanteMilitar;
+    }
+    
     
     
 }
